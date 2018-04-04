@@ -3,6 +3,7 @@
 
 package modulo;
 
+import javax.swing.JOptionPane;
 
 /**
 * Fizz Buzz
@@ -26,6 +27,22 @@ package modulo;
 **/
 
 public class FizzBuzz {
-
+public static void main(String[] args) {
+	for (int i = 1; i < 21; i++) {
+	
+		if (i%3 == 0 && i%5 == 0) {
+			System.out.println("fizzbuzz");
+		}
+		else if (i%3 == 0) { //i divided by 3. if the remainder is 0 print fizz
+			System.out.println("fizz");
+		}
+		else if (i%5 == 0 ) {
+			System.out.println("buzz");
+		}
+		else {
+			System.out.println(i);
+		}
+	}
+}
 }
 
